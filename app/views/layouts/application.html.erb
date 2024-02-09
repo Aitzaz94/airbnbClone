@@ -13,7 +13,9 @@
   </head>
 
   <body>
-    <header> <%= render 'layouts/header' %> </header>
+    <% if controller_name != 'registrations' %>
+      <header> <%= render 'layouts/header' %> </header>
+    <% end %>
     <main class="container mx-auto mt-28 px-5">
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
