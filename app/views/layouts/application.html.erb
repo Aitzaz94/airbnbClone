@@ -13,7 +13,7 @@
   </head>
 
   <body>
-    <% if controller_name != 'registrations' %>
+    <% if controller_name != 'registrations' && controller_name != 'sessions' %>
       <header> <%= render 'layouts/header' %> </header>
     <% end %>
     <main class="container mx-auto mt-28 px-5">
